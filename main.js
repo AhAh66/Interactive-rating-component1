@@ -1,12 +1,5 @@
  const submit=document.querySelector('.submit');
 
-// function togglecolor(event){
-   
-// event.target.classList.toggle('clicked');
-// }
-// button.addEventListener("click",function(){
-    
-// })
 
 
 
@@ -27,15 +20,8 @@ choese=button.value;
 });
 
 
-// var Stars=document.querySelector(".number");
-// var starsbutton=Stars.getElementsByClassName("stars");
 
-// for(let button of starsbutton){
-//     button.addEventListener("click",function(){
-//         document.querySelectorAll(".number>button").forEach(x=>x.classList.remove("clicked"));
-//         this.classList.add("clicked")
-//     })
-// }
+}
 
 
 submit.addEventListener("click",function(){
