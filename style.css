@@ -1,0 +1,145 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%,18%);
+    --Very-DarkBlue: hsl(216, 12%, 8%);
+}
+body{
+    background-color: var(--Very-DarkBlue);
+    color: var(--White);
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center;    /* Vertically centers */
+    height: 100vh; 
+    font-family: "Overpass", serif;
+}
+p{
+    color: var(--Light-Grey);
+font-size: 15px;
+font-weight: 400;
+}
+h2{
+    margin-top: 40px;
+}
+.card{
+    background-color: var(--Dark-Blue);
+    width: 330px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 30px;
+padding-top: 60px;
+
+}
+.submit{
+    width: 100%;
+    border: none;
+    background-color: var(--Orange);
+    padding: 15px 24px;
+    border-radius: 34px;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--Very-DarkBlue);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+  font-family: "Overpass", serif;
+  font-weight: 700;
+}
+.submit:hover{
+    background-color: var(--White);
+}
+.star{
+    width: 20px;
+   height: 20px;
+   padding: 10px;
+    border-radius: 50%;
+    background-color: hsl(213, 26%, 14%) ;
+    text-align: center;
+    margin-top: -28px;
+    color: var(--Light-Grey);
+  
+}
+.number{
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+  
+    justify-items: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+
+}
+.number .stars {
+    display: flex;              /* Use flexbox for alignment */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+    background-color: hsl(213, 26%, 14%);
+    width: 50px;                /* Adjust width for desired size */
+    height: 50px;               /* Adjust height for desired size */
+    border-radius: 50%;         /* Make it a perfect circle */
+    border: none;
+    color: var(--Light-Grey);
+    cursor: pointer;
+    font-size: 14px;            /* Adjust font size if needed */
+  }
+  
+.number .stars:hover{
+    background-color: var(--Orange);
+}
+.number .stars:active{
+    background-color: var(--White);
+}
+.number .stars.clicked{
+    background-color: var(--White);
+}
+.thank svg{
+   margin-left: 70px;
+   margin-top: -20px;
+}
+.attribution{
+    background-color: rgba(62, 61, 61, 0.6);
+  color: var(--Orange);
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.thank h2{
+   color: #fff;
+   margin-left: 100px;
+}
+.thank p{
+    color: var(--Light-Grey);
+   text-align: center;
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%; /* Full width for smaller screens */
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .number {
+        height: auto; /* Allow flexibility for mobile */
+    }
+
+    .number .stars {
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px;
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .submit {
+        padding: 12px 20px; /* Adjust padding */
+        font-size: 14px;    /* Adjust text size */
+    }
+
+    .thank h2 {
+        margin-left: 100px;
+    }
+}
