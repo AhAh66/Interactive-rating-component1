@@ -1,21 +1,41 @@
  const submit=document.querySelector('.submit');
 
+// function togglecolor(event){
+   
+// event.target.classList.toggle('clicked');
+// }
+// button.addEventListener("click",function(){
+    
+// })
+
+
 
 
 const starsButtons = document.querySelectorAll(".number .stars");
 let choese;
-
+// إضافة مستمع للنقر لكل زر
 starsButtons.forEach(button => {
   button.addEventListener("click", () => {
- 
+    // إزالة الصنف "clicked" من جميع الأزرار
     starsButtons.forEach(btn => btn.classList.remove("clicked"));
-
+    
+    // إضافة الصنف "clicked" فقط للزر الذي تم النقر عليه
     button.classList.add("clicked");
   
 choese=button.value;
   });
 });
 
+
+// var Stars=document.querySelector(".number");
+// var starsbutton=Stars.getElementsByClassName("stars");
+
+// for(let button of starsbutton){
+//     button.addEventListener("click",function(){
+//         document.querySelectorAll(".number>button").forEach(x=>x.classList.remove("clicked"));
+//         this.classList.add("clicked")
+//     })
+// }
 
 
 submit.addEventListener("click",function(){
@@ -47,4 +67,4 @@ else{
 )
 
    
-
+// function Secpage(){
